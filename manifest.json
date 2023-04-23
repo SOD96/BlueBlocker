@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Twitter Blue Blocker",
+  "version": "1.0",
+  "description": "Hide tweets from Twitter Blue accounts",
+  "permissions": [
+    "https://twitter.com/*",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["twitter-blue-blocker.js"],
+      "css": ["twitter-blue-blocker.css"]
+    }
+  ],
+  "options_page": "options.html",
+  "chrome_url_overrides": {
+    "options_page": "options.html"
+  },
+  "browser_action": {
+    "default_title": "Twitter Blue Blocker",
+    "options_page": "options.html"
+  }
+}
