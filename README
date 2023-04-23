@@ -1,15 +1,39 @@
-#why?
+# Twitter Blue Blocker
 
-To be honest, the sole reason this exists is because I got fed up of Blue Subscribers. I've never made a Chrome Extension before (sorry if it's bad), and I figured it was a fun thing to do. Plus the chance of Musk noticing this and getting annoyed, cherry on top.
+Twitter Blue Blocker is a Chromium extension that blocks tweets from Twitter Blue accounts. It works by detecting if a tweet is from a verified Twitter account (indicated by a blue checkmark icon) and hiding the tweet if it is.
 
-#Performance Issues?
+## Installation
 
-None that I can see, all it does is check if the tweet has the verified icon, if it does it marks it as display = none
+To install Twitter Blue Blocker, follow these steps:
 
-#This is stupid, I can do this better
+1. Download the source code from the GitHub repository.
+2. Open Google Chrome or another Chromium-based browser.
+3. Click on the three vertical dots in the top right corner of the browser.
+4. Select "More tools" from the dropdown menu.
+5. Select "Extensions" from the submenu.
+6. Turn on "Developer mode" in the top right corner of the page.
+7. Click on the "Load unpacked" button.
+8. Select the directory where you downloaded the source code.
 
-Submit a PR! I'll accept any that come along. Frankly I couldn't find this extension in my 2 minutes of searching, so I made it myself using ChatGPT, it really took no time at all. Feel free to make your own!
+The extension should now be installed and ready to use.
 
-#Musk gave everyone over 1million followers a tick now I can't see my favourite tweeter
+## Usage
 
-Ah well, might add a whitelist at some point if people actually start using it. So far it's just for my personal usage but I figured others might want it aswell.
+Once Twitter Blue Blocker is installed, it will automatically block tweets from Twitter Blue accounts. If you want to adjust the extension's settings, you can click on the extension icon in the toolbar and select "Options" from the dropdown menu.
+
+In the options page, you can choose whether to show a message when a tweet is blocked or hide the tweet completely. You can also choose whether to collapse the blocked tweet or show a link to expand it.
+
+## Development
+
+To develop Twitter Blue Blocker further, you can modify the source code in the `twitter-blue-blocker.js` file. The file contains a function called `modifyTweet` that is called whenever a tweet is loaded on the Twitter website.
+
+If you want to modify the extension's behavior or add new features, you can modify the `modifyTweet` function to suit your needs. You can also create an options page for the extension by creating an HTML file called `options.html` and adding a reference to it in the `manifest.json` file.
+
+## Contributions
+
+Feel free to submit any PRs if you wish to add more to this. It's a very simple extension, does the job well as far as my testing goes. I use it personally so any bugs or things I want to add will be done over time.
+
+
+## License
+
+Twitter Blue Blocker is released under the [MIT License](https://opensource.org/licenses/MIT).
